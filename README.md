@@ -1,4 +1,4 @@
-# vile-rails-best-practices
+# vile-rails-best-practices [![Circle CI](https://circleci.com/gh/brentlintner/vile-rails-best-practices.svg?style=svg&circle-token=fd1583c63da595c1c2dc380fe0118229c2f521ba)](https://circleci.com/gh/brentlintner/vile-rails-best-practices)
 
 A [vile](http://github.com/brentlintner/vile)
 plugin for [rails_best_practices](http://rails-bestpractices.com).
