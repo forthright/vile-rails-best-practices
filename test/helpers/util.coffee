@@ -16,18 +16,20 @@ setup = (vile) ->
 
 issues = [
   {
-    file: "app/db/schema.rb",
-    msg: "always add db index (auth_tokens => [project_id])",
-    type: "warn",
-    where: { start: { line: 19 }, end: {} },
-    data: {}
+    path: "app/db/schema.rb",
+    title: "always add db index (auth_tokens => [project_id])",
+    message: "always add db index (auth_tokens => [project_id])",
+    type: "style",
+    signature: "rbp::always add db index (auth_tokens => [project_id])",
+    where: { start: { line: 19 } },
   },
   {
-    file: "app/views/projects/_overview.html.slim",
-    msg: "replace instance variable with local variable",
-    type: "warn",
-    where: { start: {}, end: {} },
-    data: {}
+    path: "app/views/projects/_overview.html.slim",
+    title: "replace instance variable with local variable",
+    message: "replace instance variable with local variable",
+    signature: "rbp::replace instance variable with local variable",
+    type: "style"
+    where: { start: undefined },
   }
 ]
 

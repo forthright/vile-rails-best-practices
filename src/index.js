@@ -70,11 +70,14 @@ let start_line = (file) =>
 
 let into_vile_issues = (rbp_files) =>
   _.map(rbp_files, (file) =>
-    vile.issue(
-      vile.WARNING,
-      relative_path(file.filename),
-      file.message,
-      start_line(file)))
+    vile.issue({
+      type: vile.STYL,
+      path: relative_path(file.filename),
+      title: file.message,
+      message: file.message,
+      signature: `rbp::${file.message}`,
+      where: { start: start_line(file) }
+    }))
 
 let punish = (plugin_data) =>
   rbp(plugin_data)
