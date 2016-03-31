@@ -1,7 +1,8 @@
 # vile-rails-best-practices [![Circle CI](https://circleci.com/gh/brentlintner/vile-rails-best-practices.svg?style=svg&circle-token=fd1583c63da595c1c2dc380fe0118229c2f521ba)](https://circleci.com/gh/brentlintner/vile-rails-best-practices)
 
-A [vile](http://github.com/brentlintner/vile)
-plugin for [rails_best_practices](http://rails-bestpractices.com).
+[![score-badge](https://vile.io/brentlintner/vile-rails-best-practices/badges/score?token=kPQqu5uB8z-w5yAczN5F)](https://vile.io/brentlintner/vile-rails-best-practices) [![security-badge](https://vile.io/brentlintner/vile-rails-best-practices/badges/security?token=kPQqu5uB8z-w5yAczN5F)](https://vile.io/brentlintner/vile-rails-best-practices) [![coverage-badge](https://vile.io/brentlintner/vile-rails-best-practices/badges/coverage?token=kPQqu5uB8z-w5yAczN5F)](https://vile.io/brentlintner/vile-rails-best-practices) [![dependency-badge](https://vile.io/brentlintner/vile-rails-best-practices/badges/dependency?token=kPQqu5uB8z-w5yAczN5F)](https://vile.io/brentlintner/vile-rails-best-practices)
+
+A [vile](https://vile.io) plugin for [rails_best_practices](http://rails-bestpractices.com).
 
 ## Requirements
 
