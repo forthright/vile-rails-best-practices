@@ -1,6 +1,6 @@
 {
   "name": "@forthright/vile-rails-best-practices",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A vile plugin for rails_best_practices",
   "main": "lib/index.js",
   "files": [
