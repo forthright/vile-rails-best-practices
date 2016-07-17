@@ -71,6 +71,21 @@ describe "rails_best_practices", ->
             { args: DEFAULT_ARGS.concat [ "--#{flag}", "." ] },
             { config: "#{flag}": "ab" })
 
+    describe "allow list", ->
+      describe "when given a single pattern", ->
+        it "sets the related option", (done) ->
+          expect_to_set_args(
+            done,
+            { args: DEFAULT_ARGS.concat [ "--only", "ab", "." ] },
+            { allow: "ab" })
+
+      describe "when given multiple patterns", ->
+        it "sets the related option", (done) ->
+          expect_to_set_args(
+            done,
+            { args: DEFAULT_ARGS.concat [ "--only", "ab,cd", "." ] },
+            { allow: [ "ab", "cd" ] })
+
     describe "only option", ->
       describe "when given a single pattern", ->
         it "sets the related option", (done) ->
@@ -85,6 +100,21 @@ describe "rails_best_practices", ->
             done,
             { args: DEFAULT_ARGS.concat [ "--only", "ab,cd", "." ] },
             { config: only: [ "ab", "cd" ] })
+
+    describe "ignore list", ->
+      describe "when given a single pattern", ->
+        it "sets the related option", (done) ->
+          expect_to_set_args(
+            done,
+            { args: DEFAULT_ARGS.concat [ "--exclude", "ab", "." ] },
+            { ignore: "ab" })
+
+      describe "when given multiple patterns", ->
+        it "sets the related option", (done) ->
+          expect_to_set_args(
+            done,
+            { args: DEFAULT_ARGS.concat [ "--exclude", "ab,cd", "." ] },
+            { ignore: [ "ab", "cd" ] })
 
     describe "exclude option", ->
       describe "when given a single pattern", ->

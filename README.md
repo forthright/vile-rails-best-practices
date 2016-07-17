@@ -19,31 +19,63 @@ A good strategy is to use [bundler](http://bundler.io).
 
 ## Config
 
-```yml
-rails-best-practices:
-  config:
-    path: "."
-```
 
-```yml
-rails-best-practices:
-  config:
-    only: "app" || [ "app", "spec" ]
-```
-
-```yml
-rails-best-practices:
-  config:
-    exclude: "foo" || [ "foo", "bar" ]
-```
-
-```yml
+```yaml
 rails-best-practices:
   config:
     vendor: true
     spec: true
     test: true
     features: true
+```
+
+## Ignorning Files
+
+You can use `vile.ignore` or set `rails_best_practices.ignore`:
+
+```yaml
+rails-best-practices:
+  ignore:
+    - spec
+```
+
+You can also set the cli specific `exclude` option:
+
+```yaml
+rails-best-practices:
+  config:
+    exclude:
+      - foo/bar
+      - baz
+```
+
+## Allowing Files
+
+You can use `vile.allow` or set `rails_best_practices.allow`:
+
+```yaml
+rails-best-practices:
+  allow:
+    - app/controllers
+```
+
+You can also set the cli specific `path` option:
+
+```yaml
+rails-best-practices:
+  config:
+    path:
+      - foo/bar
+      - baz
+```
+
+## Setting Path Arg
+
+You can set the cli specific `path` arg if you want:
+```yaml
+rails-best-practices:
+  config:
+    path: "."
 ```
 
 ## Architecture

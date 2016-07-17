@@ -30,15 +30,17 @@ let set_path = (data, opts) =>
   opts.push(_.get(data, "config.path", CWD))
 
 let set_exclude = (data, opts) => {
-  let exclude = _.get(data, "config.exclude")
-  if (!exclude) return
+  let exclude = _.get(data, "ignore",
+    _.get(data, "config.exclude", []))
+  if (_.isEmpty(exclude)) return
   if (exclude.join) exclude = exclude.join(",")
   opts.push("--exclude", exclude)
 }
 
 let set_only = (data, opts) => {
-  let only = _.get(data, "config.only")
-  if (!only) return
+  let only = _.get(data, "allow",
+    _.get(data, "config.only", []))
+  if (_.isEmpty(only)) return
   if (only.join) only = only.join(",")
   opts.push("--only", only)
 }
