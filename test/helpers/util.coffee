@@ -19,7 +19,7 @@ issues = [
     path: "app/db/schema.rb",
     title: "always add db index (auth_tokens => [project_id])",
     message: "always add db index (auth_tokens => [project_id])",
-    type: "style",
+    type: "maintainability",
     signature: "rbp::always add db index (auth_tokens => [project_id])",
     where: { start: { line: 19 } },
   },
@@ -28,7 +28,7 @@ issues = [
     title: "replace instance variable with local variable",
     message: "replace instance variable with local variable",
     signature: "rbp::replace instance variable with local variable",
-    type: "style"
+    type: "maintainability"
     where: { start: undefined },
   }
 ]

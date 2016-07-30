@@ -73,7 +73,7 @@ let start_line = (file) =>
 let into_vile_issues = (rbp_files) =>
   _.map(rbp_files, (file) =>
     vile.issue({
-      type: vile.STYL,
+      type: vile.MAIN,
       path: relative_path(file.filename),
       title: file.message,
       message: file.message,
