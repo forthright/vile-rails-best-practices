@@ -23,6 +23,7 @@ expect_to_set_args = (done, spawn_args, plugin_data) ->
         vile.spawn.should.have.been
           .calledWith "rails_best_practices", spawn_args
           done()
+  return
 
 describe "rails_best_practices", ->
   afterEach mimus.reset
@@ -53,6 +54,7 @@ describe "rails_best_practices", ->
             fs.readFileAsync.should.have.been
               .calledWith RBP_REPORT
             done()
+      return
 
     it "removes the report file", (done) ->
       rails_best_practices
@@ -62,6 +64,7 @@ describe "rails_best_practices", ->
             fs.unlinkAsync.should.have.been
               .calledWith RBP_REPORT
             done()
+      return
 
     [ "vendor", "spec", "test", "features" ].forEach (flag) ->
       describe "#{flag} option", ->
