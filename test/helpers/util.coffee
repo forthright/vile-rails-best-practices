@@ -12,7 +12,11 @@ setup = (vile) ->
   mimus.stub(fs, "unlinkAsync").returns(
     new Promise((resolve, reject) -> resolve()))
 
-  vile.spawn.returns new Promise (resolve) -> resolve()
+  vile.spawn.returns new Promise (resolve) -> resolve({
+    code: 0
+    stdout: ""
+    stderr: ""
+  })
 
 issues = [
   {
