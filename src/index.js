@@ -2,7 +2,7 @@ let path = require("path")
 let fs = require("fs")
 let Promise = require("bluebird")
 let _ = require("lodash")
-let vile = require("@forthright/vile")
+let vile = require("vile")
 
 Promise.promisifyAll(fs)
 // TODO: break up this into smaller modules

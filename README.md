@@ -1,8 +1,6 @@
-# vile-rails-best-practices [![Circle CI](https://circleci.com/gh/forthright/vile-rails-best-practices.svg?style=shield&circle-token=fd1583c63da595c1c2dc380fe0118229c2f521ba)](https://circleci.com/gh/forthright/vile-rails-best-practices)
+# vile-rails-best-practices [![Circle CI](https://circleci.com/gh/forthright/vile-rails-best-practices.svg?style=shield&circle-token=fd1583c63da595c1c2dc380fe0118229c2f521ba)](https://circleci.com/gh/forthright/vile-rails-best-practices) [![score-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![security-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![coverage-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![dependency-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices)
 
-[![score-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![security-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![coverage-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![dependency-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices)
-
-A [vile](https://vile.io) plugin for [rails_best_practices](http://rails-bestpractices.com).
+A [vile](https://vile.io) plugin for [rails_best_practices](https://github.com/railsbp/rails_best_practices).
 
 ## Requirements
 
@@ -15,10 +13,12 @@ A [vile](https://vile.io) plugin for [rails_best_practices](http://rails-bestpra
 
 Currently, you need to have `rails_best_practices` installed manually.
 
+    npm i -D vile vile-rails-best-practices
+    gem install rails_best_practices
+
 A good strategy is to use [bundler](http://bundler.io).
 
 ## Config
-
 
 ```yaml
 rails-best-practices:
@@ -77,6 +77,43 @@ rails-best-practices:
   config:
     path: "."
 ```
+
+## Versioning
+
+This project ascribes to [semantic versioning](http://semver.org).
+
+## Licensing
+
+This project is licensed under the [MPL-2.0](LICENSE) license.
+
+Any contributions made to this project are made under the current license.
+
+## Contributions
+
+Current list of [Contributors](https://github.com/forthright/vile-rails-best-practices/graphs/contributors).
+
+Any contributions are welcome and appreciated!
+
+All you need to do is submit a [Pull Request](https://github.com/forthright/vile-rails-best-practices/pulls).
+
+1. Please consider tests and code quality before submitting.
+2. Please try to keep commits clean, atomic and well explained (for others).
+
+### Issues
+
+Current issue tracker is on [GitHub](https://github.com/forthright/vile-rails-best-practices/issues).
+
+Even if you are uncomfortable with code, an issue or question is welcome.
+
+### Code Of Conduct
+
+This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
+
+By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+### Maintainers
+
+- Brent Lintner - [@brentlintner](http://github.com/brentlintner)
 
 ## Architecture
 
