@@ -1,13 +1,12 @@
 # vile-rails-best-practices [![Circle CI](https://circleci.com/gh/forthright/vile-rails-best-practices.svg?style=shield&circle-token=fd1583c63da595c1c2dc380fe0118229c2f521ba)](https://circleci.com/gh/forthright/vile-rails-best-practices) [![score-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![security-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![coverage-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices) [![dependency-badge](https://vile.io/api/v0/projects/vile-rails-best-practices/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-rails-best-practices)
 
-A [vile](https://vile.io) plugin for [rails_best_practices](https://github.com/railsbp/rails_best_practices).
+A [Vile](https://vile.io) plugin for identifying common style and
+maintainability issues in your Rails code (via [rails_best_practices](https://github.com/railsbp/rails_best_practices)).
 
 ## Requirements
 
-- [nodejs](http://nodejs.org)
-- [npm](http://npmjs.org)
-- [ruby](http://ruby-lang.org)
-- [rubygems](http://rubygems.org)
+- [Node.js](http://nodejs.org)
+- [Ruby](http://ruby-lang.org)
 
 ## Installation
 
@@ -16,7 +15,7 @@ Currently, you need to have `rails_best_practices` installed manually.
     npm i -D vile vile-rails-best-practices
     gem install rails_best_practices
 
-A good strategy is to use [bundler](http://bundler.io).
+A good strategy is to use [Bundler](http://bundler.io).
 
 ## Config
 
@@ -80,7 +79,7 @@ rails-best-practices:
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
+This project uses [Semver](http://semver.org).
 
 ## Licensing
 
@@ -107,8 +106,6 @@ Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
 
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
-
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Maintainers
@@ -121,10 +118,10 @@ This project is currently written in JavaScript. `rails_best_practices` provides
 a JSON CLI output that is currently used until a more ideal option is implemented.
 
 - `bin` houses any shell based scripts
-- `src` is es6+ syntax compiled with [babel](https://babeljs.io)
+- `src` is es6+ syntax compiled with [Babel](https://babeljs.io)
 - `lib` generated js library
 
-## Hacking
+## Developing
 
     cd vile-rails-best-practices
     npm install

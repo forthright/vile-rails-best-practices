@@ -1,7 +1,7 @@
 {
   "name": "vile-rails-best-practices",
   "version": "0.3.2",
-  "description": "A vile plugin for rails_best_practices",
+  "description": "Identify common style and maintainability issues in your Rails code.",
   "main": "lib/index.js",
   "files": [
     "lib",
